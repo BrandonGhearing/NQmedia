@@ -93,8 +93,9 @@ public class MainActivity extends AppCompatActivity {
     private Size mPreviewSize;
     private CaptureRequest.Builder mCaptureRequestBuilder;
 
-    private Button mRecordImageButton;
+    private ImageButton mRecordImageButton;
     private boolean mIsRecording = false;
+
     private static SparseIntArray ORIENTATIONS = new SparseIntArray();
     static {
         ORIENTATIONS.append(Surface.ROTATION_0, 0);
@@ -119,13 +120,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mTextureView = (TextureView) findViewById(R.id.textureView);
-        mRecordImageButton = (Button) findViewById(R.id.videoOnlineImageButton);
+        mRecordImageButton = (ImageButton) findViewById(R.id.videoOnlineImageButton);
         mRecordImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (mIsRecording) {
                     mIsRecording = false;
-                    mRecordImageButton.setIm(R.mipmap.);
+                    mRecordImageButton.setImageResource(R.mipmap.ic_launcher_round);
+                } else{
+                    mIsRecording = true;
+                    mRecordImageButton.setImageResource(R.mipmap.ic_launcher_round);
                 }
             }
         });
