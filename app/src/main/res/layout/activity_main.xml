@@ -17,16 +17,17 @@
         android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp" />
 
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="110dp"
-        android:layout_height="98dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="178dp"
-        android:layout_marginTop="475dp"
-        android:clickable="true"
-        app:srcCompat="@android:drawable/presence_invisible" />
+    <ImageButton
+        android:id="@+id/videoOnlineImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="178dp"
+        android:layout_marginRight="178dp"
+        android:layout_marginBottom="70dp"
+        android:contentDescription="@string/video_button"
+        android:text="Video" />
 
 </RelativeLayout>

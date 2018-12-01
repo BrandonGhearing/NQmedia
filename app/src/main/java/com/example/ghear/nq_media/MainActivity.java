@@ -29,6 +29,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -95,6 +96,9 @@ public class MainActivity extends AppCompatActivity {
 
     private ImageButton mRecordImageButton;
     private boolean mIsRecording = false;
+
+    private File mFileFolder;
+    private String mVideoFileName;
 
     private static SparseIntArray ORIENTATIONS = new SparseIntArray();
     static {
@@ -321,5 +325,9 @@ public class MainActivity extends AppCompatActivity {
         } else {
             return choices[0];
         }
+    }
+
+    private void createdVideoFolder(){
+
     }
 }
